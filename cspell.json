@@ -6,6 +6,7 @@
     "autosize",
     "callout",
     "cuid",
+    "datasource",
     "dropzone",
     "firebase",
     "firestore",
@@ -21,6 +22,7 @@
     "nextjs",
     "openapi",
     "predeploy",
+    "psql",
     "tseslint",
     "vercel",
     "webp"
