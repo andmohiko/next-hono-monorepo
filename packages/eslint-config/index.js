@@ -1,7 +1,6 @@
 const eslint = require('@eslint/js')
 const globals = require('globals')
 const tsEsLintParser = require('@typescript-eslint/parser')
-
 const tseslint = require('typescript-eslint')
 const prettierConfig = require('eslint-config-prettier')
 const importPlugin = require('eslint-plugin-import')
@@ -126,19 +125,6 @@ module.exports = tseslint.config(
           default: 'generic',
         },
       ],
-      // TODO: lintが通るようにoffにしているだけなので解決したら消す
-      '@typescript-eslint/no-unsafe-assignment': 'off',
-      '@typescript-eslint/no-unsafe-argument': 'off',
-      '@typescript-eslint/no-unsafe-call': 'off',
-      '@typescript-eslint/no-unused-expressions': 'off',
-      '@typescript-eslint/only-throw-error': 'off',
-      '@typescript-eslint/no-unsafe-member-access': 'off',
-      '@typescript-eslint/no-floating-promises': 'off',
-      '@typescript-eslint/no-unsafe-return': 'off',
-      '@typescript-eslint/no-misused-promises': 'off',
-      '@typescript-eslint/require-await': 'off',
-      '@typescript-eslint/restrict-plus-operands': 'off',
-      '@typescript-eslint/no-redundant-type-constituents': 'off',
     },
   },
 )
