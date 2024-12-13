@@ -24,6 +24,7 @@
     "predeploy",
     "psql",
     "tseslint",
+    "Turborepo",
     "vercel",
     "webp"
   ],
