@@ -1,5 +1,5 @@
 {
-  "name": "@next-hono-monorepo/frontend",
+  "name": "@next-hono-monorepo/pageRouter",
   "version": "0.1.0",
   "private": true,
   "scripts": {
