@@ -23,7 +23,7 @@
     "@next-hono-monorepo/eslint-config": "workspace:*",
     "@next-hono-monorepo/ts-config": "workspace:*",
     "@next/eslint-plugin-next": "^15.1.4",
-    "@types/node": "^20.12.7",
+    "@types/node": "^22.18.6",
     "@types/react": "19.0.7",
     "@types/react-dom": "19.0.3",
     "eslint-config-next": "^15.1.4",
