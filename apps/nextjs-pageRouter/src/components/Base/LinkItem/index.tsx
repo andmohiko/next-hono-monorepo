@@ -2,16 +2,16 @@ import Link from 'next/link'
 
 import styles from '~/components/Base/LinkItem/style.module.scss'
 
+type FontSizing = 'sm' | 'md' | 'lg'
+
 type Props = {
   href: string
   label: string
   target?: '_self' | '_blank'
-  size?: fontSizing
+  size?: FontSizing
 }
 
-type fontSizing = 'sm' | 'md' | 'lg'
-
-const getFontSize = (size: fontSizing): number => {
+const getFontSize = (size: FontSizing): number => {
   if (size === 'sm') {
     return 13
   }
