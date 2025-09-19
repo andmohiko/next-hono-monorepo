@@ -124,6 +124,18 @@ importers:
       '@types/react-dom':
         specifier: ^19
         version: 19.0.3(@types/react@19.0.7)
+      eslint-config-next:
+        specifier: ^15.1.4
+        version: 15.3.1(eslint@8.57.1)(typescript@5.7.3)
+      eslint-plugin-jsx-a11y:
+        specifier: ^6.8.0
+        version: 6.10.2(eslint@8.57.1)
+      eslint-plugin-react:
+        specifier: ^7.37.4
+        version: 7.37.5(eslint@8.57.1)
+      eslint-plugin-react-hooks:
+        specifier: ^5.1.0
+        version: 5.2.0(eslint@8.57.1)
       tailwindcss:
         specifier: ^4
         version: 4.1.13
@@ -240,9 +252,6 @@ importers:
 
   packages/ts-config:
     devDependencies:
-      '@tsconfig/node20':
-        specifier: ^20.1.4
-        version: 20.1.5
       '@tsconfig/node22':
         specifier: ^22.0.2
         version: 22.0.2
@@ -2907,10 +2916,6 @@ packages:
       tailwindcss: 4.1.13
     dev: true
 
-  /@tsconfig/node20@20.1.5:
-    resolution: {integrity: sha512-Vm8e3WxDTqMGPU4GATF9keQAIy1Drd7bPwlgzKJnZtoOsTm1tduUTbDjg0W5qERvGuxPI2h9RbMufH0YdfBylA==}
-    dev: true
-
   /@tsconfig/node22@22.0.2:
     resolution: {integrity: sha512-Kmwj4u8sDRDrMYRoN9FDEcXD8UpBSaPQQ24Gz+Gamqfm7xxn+GBR7ge/Z7pK8OXNGyUzbSwJj+TH6B+DS/epyA==}
     dev: true
@@ -4417,13 +4422,13 @@ packages:
         optional: true
     dependencies:
       '@nolyfill/is-core-module': 1.0.39
-      debug: 4.4.0
+      debug: 4.4.3
       eslint: 8.57.1
       eslint-plugin-import: 2.31.0(@typescript-eslint/parser@7.18.0)(eslint-import-resolver-typescript@3.10.1)(eslint@8.57.1)
       get-tsconfig: 4.10.0
       is-bun-module: 2.0.0
       stable-hash: 0.0.5
-      tinyglobby: 0.2.13
+      tinyglobby: 0.2.15
       unrs-resolver: 1.7.2
     transitivePeerDependencies:
       - supports-color
@@ -6498,6 +6503,7 @@ packages:
     resolution: {integrity: sha512-hlq8tAfn0m/61p4BVRcPzIGr6LKiMwo4VM6dGi6pt4qcRkmNzTcWq6eCEjEh+qXjkMDvPlOFFSGwQjoEa6gyMA==}
     engines: {node: '>=10'}
     hasBin: true
+    dev: true
 
   /semver@7.7.2:
     resolution: {integrity: sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA==}
@@ -6543,7 +6549,7 @@ packages:
     dependencies:
       color: 4.2.3
       detect-libc: 2.0.4
-      semver: 7.7.1
+      semver: 7.7.2
     optionalDependencies:
       '@img/sharp-darwin-arm64': 0.33.5
       '@img/sharp-darwin-x64': 0.33.5
