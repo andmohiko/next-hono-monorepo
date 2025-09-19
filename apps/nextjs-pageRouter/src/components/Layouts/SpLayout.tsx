@@ -1,13 +1,11 @@
-import type { ReactElement, ReactNode } from 'react'
-
 import { FlexBox } from '~/components/Base/FlexBox'
 import { PageHead } from '~/components/Head'
 
 type Props = {
-  children?: ReactNode
+  children?: React.ReactNode
 }
 
-export const SpLayout = ({ children }: Props): ReactElement => (
+export const SpLayout = ({ children }: Props): React.ReactNode => (
   <FlexBox>
     <PageHead />
     <FlexBox

@@ -1,4 +1,3 @@
-import type { ReactElement, ReactNode } from 'react'
 import { useState } from 'react'
 
 import { FlexBox } from '~/components/Base/FlexBox'
@@ -6,10 +5,10 @@ import { LoadingOverlay } from '~/components/Base/Loading'
 import { PageHead } from '~/components/Head'
 
 type Props = {
-  children?: ReactNode
+  children?: React.ReactNode
 }
 
-export const DefaultLayout = ({ children }: Props): ReactElement => {
+export const DefaultLayout = ({ children }: Props): React.ReactNode => {
   // recoilなどに移してローディングをグローバルで管理する
   const [isLoading] = useState<boolean>(false)
 
