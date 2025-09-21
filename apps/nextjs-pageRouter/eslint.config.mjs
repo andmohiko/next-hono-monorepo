@@ -55,8 +55,12 @@ export default tseslint.config(
   },
   // eslint-plugin-react-hooksのrules
   {
-    files: ['**/*.{js,jsx}'],
+    files: ['**/*.{js,jsx,ts,tsx}'],
     plugins: { 'react-hooks': reactHooks },
+    rules: {
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'error',
+    },
   },
   {
     // eslint-plugin-reactのrules

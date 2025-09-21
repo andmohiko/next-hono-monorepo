@@ -3,17 +3,13 @@ import tseslint from 'typescript-eslint'
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y'
 import reactPlugin from 'eslint-plugin-react'
 import nextPlugin from '@next/eslint-plugin-next'
-import { FlatCompat } from '@eslint/eslintrc'
-
-const flatCompat = new FlatCompat()
+import reactHooks from 'eslint-plugin-react-hooks'
 
 export default tseslint.config(
   ...custom,
   reactPlugin.configs.flat.recommended,
   reactPlugin.configs.flat['jsx-runtime'],
   jsxA11yPlugin.flatConfigs.recommended,
-  // Flat Config未対応
-  ...flatCompat.extends('plugin:react-hooks/recommended'),
   {
     ignores: [
       '**/node_modules/*',
@@ -55,6 +51,15 @@ export default tseslint.config(
       ...nextPlugin.configs.recommended.rules,
       ...nextPlugin.configs['core-web-vitals'].rules,
       '@next/next/no-html-link-for-pages': ['error', './src/app/'],
+    },
+  },
+  // eslint-plugin-react-hooksのrules
+  {
+    files: ['**/*.{js,jsx,ts,tsx}'],
+    plugins: { 'react-hooks': reactHooks },
+    rules: {
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'error',
     },
   },
   {
