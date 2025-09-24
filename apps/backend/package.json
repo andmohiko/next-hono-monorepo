@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "build": "pnpm prisma generate && tsc && tsc-alias",
+    "build": "pnpm prisma generate && tsup",
     "predeploy": "pnpm prisma migrate deploy && pnpm prisma db seed",
     "start": "node dist/src/index.js",
     "lint:tsc": "tsc --noEmit",
@@ -28,6 +28,7 @@
     "@next-hono-monorepo/ts-config": "workspace:*",
     "@types/node": "^22.18.6",
     "prisma": "^6.16.2",
+    "tsup": "^8.5.0",
     "tsx": "^4.20.5",
     "typescript": "5.9.2"
   }

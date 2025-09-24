@@ -32,3 +32,6 @@ gcloudCredentials.json
 
 # build
 dist/
+
+# prisma
+/src/generated/prisma
