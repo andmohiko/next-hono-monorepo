@@ -3,9 +3,9 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "dist",
-    "module": "CommonJS",
+    "module": "ESNext",
     "target": "ES2019",
-    "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
