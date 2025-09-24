@@ -3,14 +3,15 @@ import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 
 import type { CustomContext, CustomEnv } from '~/types/locals'
+import { env } from '~/env'
 
-const port = 4000
+const port = Number(process.env.PORT) || 8080
 const app = new Hono<CustomEnv>()
 
 app.use(cors())
 
 app.get('/', (c) => {
-  return c.text('Hello Hono!')
+  return c.text(`Hello Hono! in env: ${env.NODE_ENV}`)
 })
 
 if (process.env.NODE_ENV === 'localhost') {
