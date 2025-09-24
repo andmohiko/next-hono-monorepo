@@ -1,8 +1,7 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
-  provider = "prisma-client-js"
+  provider     = "prisma-client" // 新しいジェネレーター
+  output       = "../src/generated/prisma" // 必須：出力パス
+  moduleFormat = "esm" // ESM形式を指定
 }
 
 datasource db {
