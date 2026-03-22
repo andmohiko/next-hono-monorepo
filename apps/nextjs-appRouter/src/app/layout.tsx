@@ -19,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className="flex h-screen">
+    <html lang="en" suppressHydrationWarning>
+      <body className="flex h-screen" suppressHydrationWarning>
         <main className="flex min-h-screen w-full items-start justify-start p-4">
           {children}
         </main>
